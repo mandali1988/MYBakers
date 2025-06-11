@@ -676,3 +676,8 @@ p {
   }
   .nag-margin-45{margin-top: 20px;}
 }
+
+@media (min-width: 1366px) and (max-width: 1600px)  {
+ 
+   .nag-margin-45{margin-top: 40px;}
+}
