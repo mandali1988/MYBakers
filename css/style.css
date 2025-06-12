@@ -376,16 +376,140 @@ p {
   z-index: -9;
 }
 
+
+/*Product Page CSS Start here*/
+
+.product-section .nav-tabs .nav-link {
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.product-section .tab-colors .nav-link {
+  border: none;
+  color: #000;
+  font-size: 40px;
+  word-break: break-all;
+  word-wrap: break-word;
+  padding: 10px;
+  margin: 0;
+  line-height: 44px;
+}
+
+.product-section .tab-colors .nav-link.active {
+
+  border-bottom: 0px solid black;
+}
+
+.product-section .tab-bg-1 {
+  background-color: #04bcbf !important;
+}
+
+.product-section .tab-bg-2 {
+  background-color: #f24c00 !important;
+}
+
+.product-section .tab-bg-3 {
+  background-color: #ffd100 !important;
+}
+
+.product-section .tab-bg-4 {
+  background-color: #0ba960 !important;
+}
+
+.product-section .tab-bg-5 {
+  background-color: #d75387 !important;
+}
+
+.product-section .nav {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.product-section .nav li {
+  width: 20%;
+}
+
+.product-section .nav li button {
+  width: 100%;
+  border-radius: 0;
+  border: 0;
+}
+
+.product-section .tab-colors .nav-link:after {
+  display: none;
+}
+
+.product-img-block {
+  background: #ededed;
+  width: 100%;
+  max-width: 360px;
+  max-height: 480px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  min-height: 480px;
+  margin: 0 auto 40px;
+}
+
+.product-img-block h5, .contt-block p {
+  font-size: 1.875rem;
+  font-weight: normal;
+  margin: 0px 0 0 0;
+}
+
+.product-img-block p {
+  font-size: 1.563rem;
+  font-weight: normal;
+  margin: 0px 0 0 0;
+}
+ 
+.product-section-main { background-image: url(../images/product-bg.png); background-position: 0% 25%; background-repeat: no-repeat;background-size: 100%;}
+/*Product Page CSS Start End*/
+
+/*Contact-us-page Page CSS Start*/
+.contact-us-page {background-color: transparent;width: 50%; }
+.contact-us-page:after {
+    content: "";
+    background-image: url(../images/object-img.png);
+    position: absolute;
+    width: 106px;
+    height: 260px;
+    left: -20%;
+    top: 30%;
+    z-index: -9;
+    transform: rotate(45deg);
+    background-repeat: no-repeat;
+}
+.contact-us-page:before {
+    content: "";
+    background-image: url(../images/circle-img.png);
+    position: absolute;
+    width: 184px;
+    height: 285px;
+    right: -28%;
+    top: 0;
+    z-index: -9;
+    background-repeat: no-repeat;
+}
+.form-control{
+  background-color: #e8e8e8;
+  border-radius: 0;
+}
+/*Contact-us-page Page CSS End*/
+ 
 @media (max-width: 767.98px) {
-  p {
+  p,  .contt-block p {
     font-size: 1rem;
-    line-height: normal
+    line-height: normal;
   }
 
   .header-section .navbar-brand img {
     max-width: 100%;
     width: 130px;
-    display: inline-block
+    display: inline-block;
   }
 
   .header-section .navbar-brand {
@@ -522,7 +646,7 @@ p {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  p {
+ p,  .contt-block p {
     font-size: 1rem;
     line-height: normal
   }
@@ -658,13 +782,22 @@ p {
 @media (max-width: 1240px) {
 
   .left-img-1:after,
-  .right-img-1:after, .shafe-full-img-left {
+  .right-img-1:after,
+  .shafe-full-img-left {
     display: none !important;
   }
-   .nag-margin-45{margin-top: 0px;}
+  .contact-us-page{width: 100%;}
+  .contact-us-page:before, .contact-us-page:after{display: none;}
+
+  .nag-margin-45 {
+    margin-top: 0px;
+  }
+  .product-section .nav li{width: 100%;}
+  .product-section .nav li br {display: none;}
+  .contt-block > img { max-width: 50px; }
 }
 
-@media (min-width: 992px) and (max-width: 1366px)  {
+@media (min-width: 992px) and (max-width: 1366px) {
   .nav-link {
     font-size: 1rem
   }
@@ -674,10 +807,15 @@ p {
     width: 70%;
     display: inline-block
   }
-  .nag-margin-45{margin-top: 20px;}
+
+  .nag-margin-45 {
+    margin-top: 20px;
+  }
 }
 
-@media (min-width: 1366px) and (max-width: 1600px)  {
- 
-   .nag-margin-45{margin-top: 40px;}
+@media (min-width: 1366px) and (max-width: 1600px) {
+
+  .nag-margin-45 {
+    margin-top: 40px;
+  }
 }
