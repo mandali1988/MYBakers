@@ -255,8 +255,8 @@ p {
 }
 
 .testimonial-top-margin {
-  margin-top: 22%;
-  margin-right: 8%
+  margin-top: 22% !important;
+  margin-right: 8% !important;
 }
 
 .test-athrname {
@@ -454,7 +454,8 @@ p {
   margin: 0 auto 40px;
 }
 
-.product-img-block h5, .contt-block p {
+.product-img-block h5,
+.contt-block p {
   font-size: 1.875rem;
   font-weight: normal;
   margin: 0px 0 0 0;
@@ -465,43 +466,58 @@ p {
   font-weight: normal;
   margin: 0px 0 0 0;
 }
- 
-.product-section-main { background-image: url(../images/product-bg.png); background-position: 0% 25%; background-repeat: no-repeat;background-size: 100%;}
+
+.product-section-main {
+  background-image: url(../images/product-bg.png);
+  background-position: 0% 25%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 /*Product Page CSS Start End*/
 
 /*Contact-us-page Page CSS Start*/
-.contact-us-page {background-color: transparent;width: 50%; }
+.contact-us-page {
+  background-color: transparent;
+  width: 50%;
+}
+
 .contact-us-page:after {
-    content: "";
-    background-image: url(../images/object-img.png);
-    position: absolute;
-    width: 106px;
-    height: 260px;
-    left: -20%;
-    top: 30%;
-    z-index: -9;
-    transform: rotate(45deg);
-    background-repeat: no-repeat;
+  content: "";
+  background-image: url(../images/object-img.png);
+  position: absolute;
+  width: 106px;
+  height: 260px;
+  left: -20%;
+  top: 30%;
+  z-index: -9;
+  transform: rotate(45deg);
+  background-repeat: no-repeat;
 }
+
 .contact-us-page:before {
-    content: "";
-    background-image: url(../images/circle-img.png);
-    position: absolute;
-    width: 184px;
-    height: 285px;
-    right: -28%;
-    top: 0;
-    z-index: -9;
-    background-repeat: no-repeat;
+  content: "";
+  background-image: url(../images/circle-img.png);
+  position: absolute;
+  width: 184px;
+  height: 285px;
+  right: -28%;
+  top: 0;
+  z-index: -9;
+  background-repeat: no-repeat;
 }
-.form-control{
+
+.form-control {
   background-color: #e8e8e8;
   border-radius: 0;
 }
+
 /*Contact-us-page Page CSS End*/
- 
+
 @media (max-width: 767.98px) {
-  p,  .contt-block p {
+
+  p,
+  .contt-block p {
     font-size: 1rem;
     line-height: normal;
   }
@@ -586,8 +602,8 @@ p {
   }
 
   .testimonial-top-margin {
-    margin-top: 0;
-    margin-right: 0
+    margin-top: 0 !important;
+    margin-right: 0 !important;
   }
 
   .testimonial-box {
@@ -643,11 +659,16 @@ p {
     zoom: .6;
     bottom: 50px
   }
- .product-section .tab-colors .nav-link {font-size: 20px;}
+
+  .product-section .tab-colors .nav-link {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
- p,  .contt-block p {
+
+  p,
+  .contt-block p {
     font-size: 1rem;
     line-height: normal
   }
@@ -788,16 +809,35 @@ p {
   .shafe-full-img-left {
     display: none !important;
   }
-  .contact-us-page{width: 100%;}
-  .contact-us-page:before, .contact-us-page:after{display: none;}
+
+  .contact-us-page {
+    width: 100%;
+  }
+
+  .contact-us-page:before,
+  .contact-us-page:after {
+    display: none;
+  }
 
   .nag-margin-45 {
     margin-top: 0px;
   }
-  .product-section .nav li{width: 100%;}
-  .product-section .nav li br {display: none;}
-  .contt-block > img { max-width: 50px; }
-    .product-img-block{padding: 0 20px;}
+
+  .product-section .nav li {
+    width: 100%;
+  }
+
+  .product-section .nav li br {
+    display: none;
+  }
+
+  .contt-block>img {
+    max-width: 50px;
+  }
+
+  .product-img-block {
+    padding: 0 20px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1366px) {
