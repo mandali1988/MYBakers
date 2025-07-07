@@ -16,7 +16,7 @@ function scrollToTop() {
 $(document).ready(function () {
   $('.your-slider').slick({
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 300,
     prevArrow: $('.custom-prev'),
     nextArrow: $('.custom-next'),
@@ -52,7 +52,7 @@ $(document).ready(function () {
   });
    $('.ourproduct-sld').slick({
     dots: false,
-    infinite: false, 
+    infinite: true, 
     speed: 300,
     prevArrow: $('.custom-prev-1'),
     nextArrow: $('.custom-next-1'),
